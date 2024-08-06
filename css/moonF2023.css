@@ -1,0 +1,262 @@
+* {
+    letter-spacing: 1px;
+}
+
+.banner-area {
+    margin-top: 100px;
+    position: relative;
+}
+
+.web-img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.mobile-img {
+    display: none;
+}
+
+.list-container {
+    width: 86vw;
+    max-width: 1300px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.title-area .title {
+    margin-top: 80px;
+    font-size: 2.8rem;
+    font-weight: 600;
+    color: #b60400;
+    text-align: center;
+    cursor: default;
+}
+
+.title-area .title span {
+    position: relative;
+}
+
+.title-area .title span:nth-child(1)::after {
+    content: '';
+    position: absolute;
+    top: 26px;
+    right: -47px;
+    width: 60px;
+    height: 55px;
+    background: url(../fittrip/images/airplane.png);
+}
+
+.information {
+    display: block;
+    margin: 4rem 1.5rem;
+}
+
+.text-content {
+    display: flex;
+    justify-content: space-around;
+}
+
+.text-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text-box {
+    padding: 1rem;
+    text-align: center;
+}
+
+.text-box h3 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #832900;
+}
+
+.links {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 30%);
+    justify-content: space-between;
+    align-items: center;
+    grid-gap: 35px;
+    margin-top: 50px;
+}
+
+.links a {
+    display: inline-block;
+    position: relative;
+    max-width: 350px;
+    letter-spacing: 4px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.area-img {
+    position: relative;
+    border-radius: 20px;
+    transition: all .2s;
+}
+
+.area-img img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.links a:hover .area-img {
+    transform: scale(1.06);
+    box-shadow: 0px 0px 6px 0px #1715155e;
+}
+
+.links a:hover .black-cover {
+    transform: scale(1.06);
+}
+
+.black-cover {
+    position: absolute;
+    width: 100%;
+    background: linear-gradient(180deg, #fffefe00, #090401);
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 20px;
+    transition: all .2s;
+}
+
+
+.area-box {
+    position: absolute;
+    width: 100%;
+    bottom: 12px;
+    left: 0;
+    width: 100%;
+    padding: 0 22px;
+}
+
+.name-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.name-price h3 {
+    padding-bottom: 8px;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.name-price p {
+    font-size: .8rem;
+}
+
+.price {
+    color: #ffffff;
+    font-weight: 800;
+    font-size: 1.2rem;
+    letter-spacing: normal;
+}
+
+.area-name {
+    text-align: left;
+}
+
+.ci-if {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 75px;
+}
+
+.ci-if img {
+    width: 100%;
+    max-width: 600px;
+}
+
+@media (max-width: 960px) {
+    .text-box p {
+        font-size: 1rem;
+        line-height: 23px;
+    }
+
+    .links {
+        grid-template-columns: repeat(auto-fill, 47%);
+        grid-gap: 15px;
+    }
+
+    .name-price p {
+        font-size: .7rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .banner-area {
+        margin-top: 70px;
+    }
+
+    .title-area .title {
+        font-size: 2.2rem;
+    }
+
+    .web-img {
+        display: none;
+    }
+
+    .mobile-img {
+        width: 100%;
+        display: block;
+        object-fit: cover;
+    }
+
+    .title-area .title {
+        margin-bottom: -2.5rem;
+    }
+
+    .text-content {
+        flex-direction: column;
+        margin-top: 1.5rem;
+    }
+}
+
+@media (max-width:560px) {
+    .links {
+        grid-template-columns: repeat(auto-fill, 98%);
+        justify-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .title-area {
+        margin: 4rem 0 0;
+    }
+
+    .title-area .title {
+        margin-top: -2.2rem;
+        font-size: 1.7rem;
+    }
+
+    .title-area .title2 {
+        font-size: 0.825rem;
+    }
+
+    .information {
+        margin: 0 0 4rem 0;
+    }
+
+    .text-area {
+        margin-top: 3rem;
+    }
+
+    .text-box {
+        padding: unset;
+    }
+
+    .name-price h3 {
+        padding-bottom: 6px;
+        font-size: 1.125rem;
+    }
+
+    .text-box p {
+        font-size: 0.9rem;
+    }
+}
